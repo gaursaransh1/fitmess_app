@@ -22,10 +22,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".leg"
-            android:label="@string/title_activity_leg"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".abs"
             android:label="@string/title_activity_abs"
             android:parentActivityName=".MainActivity"
@@ -37,7 +33,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.saranshgaur.firstapp.MainActivity" />
         </activity>
-        <activity android:name=".splash">
+        <activity android:name=".splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -206,7 +206,78 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.saranshgaur.firstapp.Back1" />
-
+        </activity>
+        <activity
+            android:name=".leg1"
+            android:label="@string/title_activity_leg1"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".squatpic"
+            android:label="@string/title_activity_squatpic"
+            android:parentActivityName=".leg1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".lpresspic"
+            android:label="@string/title_activity_lpresspic"
+            android:parentActivityName=".leg1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".walkingpic"
+            android:label="@string/title_activity_walkingpic"
+            android:parentActivityName=".leg1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".lextensionpic"
+            android:label="@string/title_activity_lextensionpic"
+            android:parentActivityName=".leg1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".romadeadpic"
+            android:label="@string/title_activity_romadeadpic"
+            android:parentActivityName=".leg1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".lcurl"
+            android:label="@string/title_activity_lcurl"
+            android:parentActivityName=".leg1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".lraisepic"
+            android:label="@string/title_activity_lraisepic"
+            android:parentActivityName=".leg1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
         </activity>
     </application>
 

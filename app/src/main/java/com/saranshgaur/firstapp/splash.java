@@ -1,5 +1,6 @@
 package com.saranshgaur.firstapp;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -10,7 +11,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-public class splash extends AppCompatActivity {
+public class splash extends Activity {
 
     private final int SPLASH_DISPLAY_LENGTH = 1000;
 
@@ -19,9 +20,9 @@ public class splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+       /* android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Fitness");
-        actionBar.setBackgroundDrawable(new ColorDrawable(Color.BLACK));
+        actionBar.setBackgroundDrawable(new ColorDrawable(Color.BLACK));*/
 
         final ImageView VE = (ImageView) findViewById(R.id.saruview);
         final Animation an = AnimationUtils.loadAnimation(getBaseContext(),R.anim.rotate);

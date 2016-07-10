@@ -25,4 +25,13 @@
     <string name="title_activity_rollerpic">rollerpic</string>
     <string name="title_activity_ropecrunchpic">ropecrunchpic</string>
     <string name="title_activity_toetoucherpic">toetoucherpic</string>
+    <string name="title_activity_leg1">leg1</string>
+    <string name="title_activity_legcustom">legcustom</string>
+    <string name="title_activity_squatpic">squatpic</string>
+    <string name="title_activity_lpresspic">lpresspic</string>
+    <string name="title_activity_walkingpic">walkingpic</string>
+    <string name="title_activity_lextensionpic">lextensionpic</string>
+    <string name="title_activity_romadeadpic">romadeadpic</string>
+    <string name="title_activity_lcurl">lcurl</string>
+    <string name="title_activity_lraisepic">lraisepic</string>
 </resources>

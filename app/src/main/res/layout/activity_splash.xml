@@ -45,7 +45,7 @@
 
     <ImageView
         android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_height="136dp"
         android:id="@+id/imageView"
         android:src="@drawable/splashicon"
         android:layout_alignParentBottom="true"

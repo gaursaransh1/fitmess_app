@@ -8,34 +8,41 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 /**
- * Created by saransh gaur on 04-07-2016.
+ * Created by saransh gaur on 10-07-2016.
  */
-public class legcustom extends ArrayAdapter<String> {
-    private int[] imgs;
-    //   private String[] detail;
-    //   private int[] icon;
-    public legcustom(Context context, String[] excercise, int[] imgs) {
-        super(context, R.layout.backcustom_row, excercise);
-        this.imgs = imgs;
-//        this.detail = detail;
-//        this.icon = icon;
+public class legcustom extends ArrayAdapter<User> {
+    private final ArrayList<User> excercise1;
+    private final Context context;
+    private int[] imgs1;
+    public legcustom(Context context, ArrayList<User> excercise1, int[] imgs) {
+
+        super(context, R.layout.legcustom_row, excercise1);
+
+        this.excercise1 = excercise1;
+        this.context = context;
+        this.imgs1 = imgs;
     }
+
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        LayoutInflater saruinflator = LayoutInflater.from(getContext());
-        View coustomView = saruinflator.inflate(R.layout.legcustom_row, parent, false);
+        LayoutInflater inflater = (LayoutInflater) context
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-        String excerciseitem = getItem(position);
-        //      TextView mediumtext = (TextView) convertView.findViewById(R.id.mediumtext);
-        TextView backtext = (TextView) coustomView.findViewById(R.id.sarutext);
-        ImageView backview = (ImageView) coustomView.findViewById(R.id.saruimage);
+        // 2. Get rowView from inflater
+        View coustomView = inflater.inflate(R.layout.legcustom_row, parent, false);
+
+        TextView mediumtext = (TextView) coustomView.findViewById(R.id.mediumtext);
+        TextView backtext = (TextView) coustomView.findViewById(R.id.backtext);
+        ImageView backview = (ImageView) coustomView.findViewById(R.id.backview);
         //      ImageView iconview = (ImageView) coustomView.findViewById(R.id.iconview);
 
-        //      mediumtext.setText(detail[position]);
-        backtext.setText(excerciseitem);
-        backview.setImageResource(imgs[position]);
+        mediumtext.setText(excercise1.get(position).getMediumtext());
+        backtext.setText(excercise1.get(position).getLargetext());
+        backview.setImageResource(imgs1[position]);
         //      iconview.setImageResource(icon[position]);
         return coustomView;
     }

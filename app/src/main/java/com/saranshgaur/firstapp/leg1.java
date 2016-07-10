@@ -12,40 +12,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewConfiguration;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 
-public class Back1 extends AppCompatActivity {
+public class leg1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_back1);
+        setContentView(R.layout.activity_leg1);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle("Back Day");
+        actionBar.setTitle("Leg Day");
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.BLACK));
-
-
-        try {
-            ViewConfiguration config = ViewConfiguration.get(this);
-            Field menuKeyField = ViewConfiguration.class.getDeclaredField("sHasPermanentMenuKey");
-            if(menuKeyField != null) {
-                menuKeyField.setAccessible(true);
-                menuKeyField.setBoolean(config, false);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -55,16 +39,15 @@ public class Back1 extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
-        String[] excercise1 = {"Wide-Grip Pull-Up", "Wide-Grip Pull-Down", "T-Bar Row", "Seated Cable Row", "Close Grip Row", "One Arm Dumble Row", "Dead Lift"};
-        String[] Detail = {"3 Set of 8-12 rep", "4 set of 12-15 rep", "3 set of 12,10,8 rep", "3 set of 10-12 rep", "4 set of 10-15 rep", "3 set of 10-12 rep", "4 set of 10,8,8,6"};
+        String[] excercise1 = {"Barbell Squat", "Leg Press", "Walking Dumble Lunge", "Leg Extension", "Romanian Deadlift", "Lying Leg Curl", "Standing Leg Raise"};
+        String[] Detail = {"4 sets of 10,10,8,6 reps", "4 sets of 10,10,8,6 reps", "3 sets of 10,12,14 steps", "3 set of 10rep", "3 sets of 8,10,12 reps", "3 sets of 8,10,12 reps", "4 sets of 12,12,20,20 reps"};
         ArrayList<User> arraylist = new ArrayList<User>();
         for (int i = 0; i < excercise1.length; i++) {
             User user = new User(excercise1[i], Detail[i]);
             arraylist.add(user);
         }
-        final int[] imgs1 = {R.drawable.pullup_la, R.drawable.pulldown_la, R.drawable.tbar_la, R.drawable.seated_la, R.drawable.bend_la, R.drawable.onearm_la, R.drawable.dead_la};
-        backcustom saruadapter = new backcustom(this, arraylist, imgs1);
+        final int[] imgs1 = {R.drawable.squat_ic, R.drawable.presspic_ic, R.drawable.walk_ic, R.drawable.extension_ic, R.drawable.roman_ic, R.drawable.curlpic_ic, R.drawable.raisepic_ic};
+        legcustom saruadapter = new legcustom(this, arraylist, imgs1);
         ListView sarulistview = (ListView) findViewById(R.id.listview);
         sarulistview.setAdapter(saruadapter);
 
@@ -74,44 +57,44 @@ public class Back1 extends AppCompatActivity {
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         switch (position) {
                             case 0:
-                                Intent i0 = new Intent(Back1.this, pulluppic1.class);
+                                Intent i0 = new Intent(leg1.this, squatpic.class);
                                 startActivity(i0);
 
                                 break;
                             case 1:
-                                Intent i1 = new Intent(Back1.this, widergrippic1.class);
+                                Intent i1 = new Intent(leg1.this, lpresspic.class);
                                 startActivity(i1);
 
                                 break;
                             case 2:
-                                Intent i2 = new Intent(Back1.this, pulldownpic1.class);
+                                Intent i2 = new Intent(leg1.this, walkingpic.class);
                                 startActivity(i2);
 
                                 break;
                             case 3:
-                                Intent i3 = new Intent(Back1.this, seatedcablepic1.class);
+                                Intent i3 = new Intent(leg1.this, lextensionpic.class);
                                 startActivity(i3);
 
                                 break;
                             case 4:
-                                Intent i4 = new Intent(Back1.this, bendpic1.class);
+                                Intent i4 = new Intent(leg1.this, romadeadpic.class);
                                 startActivity(i4);
 
                                 break;
                             case 5:
-                                Intent i5 = new Intent(Back1.this, onearmpic1.class);
+                                Intent i5 = new Intent(leg1.this, lcurl.class);
                                 startActivity(i5);
 
                                 break;
                             case 6:
-                                Intent i6 = new Intent(Back1.this, deadpic1.class);
+                                Intent i6 = new Intent(leg1.this, lraisepic.class);
                                 startActivity(i6);
 
                                 break;
-                            default:
+                            /*default:
                                 String url = "http://www.youtube.com/watch?v=qvtCk1wZ7LM";
                                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                                startActivity(intent);
+                                startActivity(intent);*/
                         }
                     }
                 }

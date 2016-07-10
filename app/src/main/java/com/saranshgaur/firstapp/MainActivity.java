@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 break;
                             case 1:
-                                Intent i1 = new Intent(MainActivity.this, leg.class);
+                                Intent i1 = new Intent(MainActivity.this, leg1.class);
                                 startActivity(i1);
 
                                 break;
