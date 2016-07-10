@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saranshgaur.firstapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".leg"
+            android:label="@string/title_activity_leg"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".abs"
+            android:label="@string/title_activity_abs"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlarmReceiver">
+            <intent-filter>
+                <action android:name="xyz" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".onearmpic" />
+        <activity android:name=".pulluppic" />
+        <activity android:name=".pulldownpic" />
+        <activity android:name=".bendpic" />
+        <activity android:name=".seatedcabelpic" />
+        <activity android:name=".widergrippic" />
+        <activity android:name=".deadpic" />
+        <activity android:name=".chest" />
+        <activity
+            android:name=".Shoulder"
+            android:label="@string/title_activity_shoulder"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Back1"
+            android:label="@string/title_activity_back1"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity android:name=".backcustom" />
+        <activity
+            android:name=".onearmpic1"
+            android:label="@string/title_activity_onearmpic1"
+            android:parentActivityName=".Back1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+        </activity>
+        <activity
+            android:name=".pulldownpic1"
+            android:label="@string/title_activity_pulldownpic1"
+            android:parentActivityName=".Back1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+        </activity>
+        <activity
+            android:name=".pulluppic1"
+            android:label="@string/title_activity_pulluppic1"
+            android:parentActivityName=".Back1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+        </activity>
+        <activity
+            android:name=".seatedcablepic1"
+            android:label="@string/title_activity_seatedcablepic1"
+            android:parentActivityName=".Back1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+        </activity>
+        <activity
+            android:name=".widergrippic1"
+            android:label="@string/title_activity_widergrippic1"
+            android:parentActivityName=".Back1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+        </activity>
+        <activity
+            android:name=".bendpic1"
+            android:label="@string/title_activity_bendpic1"
+            android:parentActivityName=".Back1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+        </activity>
+        <activity
+            android:name=".deadpic1"
+            android:label="@string/title_activity_deadpic1"
+            android:parentActivityName=".Back1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+        </activity>
+        <activity
+            android:name=".airbikepic"
+            android:label="@string/title_activity_airbikepic"
+            android:parentActivityName=".abs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+        </activity>
+        <activity
+            android:name=".crunchpic"
+            android:label="@string/title_activity_crunchpic"
+            android:parentActivityName=".abs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+        </activity>
+        <activity
+            android:name=".dcrunchpic"
+            android:label="@string/title_activity_dcrunchpic"
+            android:parentActivityName=".abs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+        </activity>
+        <activity
+            android:name=".drcrunch"
+            android:label="@string/title_activity_drcrunch"
+            android:parentActivityName=".abs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+        </activity>
+        <activity
+            android:name=".hanginglpic"
+            android:label="@string/title_activity_hanginglpic"
+            android:parentActivityName=".abs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+        </activity>
+        <activity
+            android:name=".rollerpic"
+            android:label="@string/title_activity_rollerpic"
+            android:parentActivityName=".abs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+        </activity>
+        <activity
+            android:name=".ropecrunchpic"
+            android:label="@string/title_activity_ropecrunchpic"
+            android:parentActivityName=".abs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+        </activity>
+        <activity
+            android:name=".toetoucherpic"
+            android:label="@string/title_activity_toetoucherpic"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.Back1" />
+
+        </activity>
+    </application>
+
+</manifest>
