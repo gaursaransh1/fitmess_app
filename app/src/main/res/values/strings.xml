@@ -34,4 +34,19 @@
     <string name="title_activity_romadeadpic">romadeadpic</string>
     <string name="title_activity_lcurl">lcurl</string>
     <string name="title_activity_lraisepic">lraisepic</string>
+    <string name="title_activity_ardumpresspic">ardumpresspic</string>
+    <string name="title_activity_barshouprepic">barshouprepic</string>
+    <string name="title_activity_cardripic">cardripic</string>
+    <string name="title_activity_frodumraipic">frodumraipic</string>
+    <string name="title_activity_overraipic">overraipic</string>
+    <string name="title_activity_sidelarraipic">sidelarraipic</string>
+    <string name="title_activity_upbarrowpic">upbarrowpic</string>
+    <string name="title_activity_barbprepic">barbprepic</string>
+    <string name="title_activity_dbarbprepic">dbarbprepic</string>
+    <string name="title_activity_ibbprepic">ibbprepic</string>
+    <string name="title_activity_idpullpic">idpullpic</string>
+    <string name="title_activity_idflypic">idflypic</string>
+    <string name="title_activity_idprepic">idprepic</string>
+    <string name="title_activity_pushuppic">pushuppic</string>
+    <string name="title_activity_chest1">chest1</string>
 </resources>

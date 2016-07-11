@@ -39,5 +39,6 @@
         android:layout_toRightOf="@+id/backview"
         android:layout_toEndOf="@+id/backview"
         android:layout_marginTop="5dp"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"/>
 </RelativeLayout>

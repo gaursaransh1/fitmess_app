@@ -33,11 +33,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.saranshgaur.firstapp.MainActivity" />
         </activity>
-        <activity android:name=".splash"
+        <activity
+            android:name=".splash"
             android:label="@string/app_name"
+            android:noHistory="true"
             android:screenOrientation="portrait"
-            android:theme="@style/SplashTheme"
-            android:noHistory="true">
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -58,11 +59,15 @@
         <activity android:name=".seatedcabelpic" />
         <activity android:name=".widergrippic" />
         <activity android:name=".deadpic" />
-        <activity android:name=".chest" />
         <activity
             android:name=".Shoulder"
             android:label="@string/title_activity_shoulder"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
         <activity
             android:name=".Back1"
             android:label="@string/title_activity_back1"
@@ -72,7 +77,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.saranshgaur.firstapp.MainActivity" />
         </activity>
-        <activity android:name=".backcustom" />
+        <activity
+            android:name=".backcustom"
+            android:label="@string/title_activity_shoulder"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
         <activity
             android:name=".onearmpic1"
             android:label="@string/title_activity_onearmpic1"
@@ -274,6 +287,141 @@
             android:name=".lraisepic"
             android:label="@string/title_activity_lraisepic"
             android:parentActivityName=".leg1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ardumpresspic"
+            android:label="@string/title_activity_ardumpresspic"
+            android:parentActivityName=".Shoulder"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".barshouprepic"
+            android:label="@string/title_activity_barshouprepic"
+            android:parentActivityName=".Shoulder"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".cardripic"
+            android:label="@string/title_activity_cardripic"
+            android:parentActivityName=".Shoulder"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".frodumraipic"
+            android:label="@string/title_activity_frodumraipic"
+            android:parentActivityName=".Shoulder"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".overraipic"
+            android:label="@string/title_activity_overraipic"
+            android:parentActivityName=".Shoulder"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".sidelarraipic"
+            android:label="@string/title_activity_sidelarraipic"
+            android:parentActivityName=".Shoulder"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".upbarrowpic"
+            android:label="@string/title_activity_upbarrowpic"
+            android:parentActivityName=".Shoulder"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".barbprepic"
+            android:label="@string/title_activity_barbprepic"
+            android:parentActivityName=".chest1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".dbarbprepic"
+            android:label="@string/title_activity_dbarbprepic"
+            android:parentActivityName=".chest1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ibbprepic"
+            android:label="@string/title_activity_ibbprepic"
+            android:parentActivityName=".chest1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".idpullpic"
+            android:label="@string/title_activity_idpullpic"
+            android:parentActivityName=".chest1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".idflypic"
+            android:label="@string/title_activity_idflypic"
+            android:parentActivityName=".chest1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".idprepic"
+            android:label="@string/title_activity_idprepic"
+            android:parentActivityName=".chest1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".pushuppic"
+            android:label="@string/title_activity_pushuppic"
+            android:parentActivityName=".chest1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".chest1"
+            android:label="@string/title_activity_chest1"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

@@ -76,12 +76,17 @@ public class MainActivity extends AppCompatActivity {
 
                                 break;
                             case 3:
-                                Intent i3 = new Intent(MainActivity.this, chest.class);
+                                Intent i3 = new Intent(MainActivity.this, chest1.class);
                                 startActivity(i3);
 
                                 break;
+                            case 4:
+                                Intent i4 = new Intent(MainActivity.this, Shoulder.class);
+                                startActivity(i4);
+
+                                break;
                             default:
-                                String url = "http://www.youtube.com/watch?v=qvtCk1wZ7LM";
+                                String url = "https://www.youtube.com/watch?v=67xffORC8g4";
                                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                                 startActivity(intent);
                         }

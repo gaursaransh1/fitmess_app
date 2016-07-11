@@ -34,7 +34,7 @@ public class abs extends AppCompatActivity {
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle("Abs");
+        actionBar.setTitle("Abs Day");
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.BLACK));
 
 
