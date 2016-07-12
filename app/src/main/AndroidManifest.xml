@@ -427,6 +427,87 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.saranshgaur.firstapp.MainActivity" />
         </activity>
+        <activity
+            android:name=".arm"
+            android:label="@string/title_activity_arm"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".clogbppic"
+            android:label="@string/title_activity_clogbppic"
+            android:parentActivityName=".arm"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ezdbtpic"
+            android:label="@string/title_activity_ezdbtpic"
+            android:parentActivityName=".arm"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".diptpic"
+            android:label="@string/title_activity_diptpic"
+            android:parentActivityName=".arm"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ezbcpic"
+            android:label="@string/title_activity_ezbcpic"
+            android:parentActivityName=".arm"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".hamcpic"
+            android:label="@string/title_activity_hamcpic"
+            android:parentActivityName=".arm"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".precpic"
+            android:label="@string/title_activity_precpic"
+            android:parentActivityName=".arm"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".incdcpic"
+            android:label="@string/title_activity_incdcpic"
+            android:parentActivityName=".arm"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".trircpic"
+            android:label="@string/title_activity_trircpic"
+            android:parentActivityName=".arm"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saranshgaur.firstapp.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

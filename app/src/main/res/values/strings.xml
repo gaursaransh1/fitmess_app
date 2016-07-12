@@ -49,4 +49,13 @@
     <string name="title_activity_idprepic">idprepic</string>
     <string name="title_activity_pushuppic">pushuppic</string>
     <string name="title_activity_chest1">chest1</string>
+    <string name="title_activity_arm">arm</string>
+    <string name="title_activity_clogbppic">clogbppic</string>
+    <string name="title_activity_ezdbtpic">ezdbtpic</string>
+    <string name="title_activity_diptpic">diptpic</string>
+    <string name="title_activity_ezbcpic">ezbcpic</string>
+    <string name="title_activity_hamcpic">hamcpic</string>
+    <string name="title_activity_precpic">precpic</string>
+    <string name="title_activity_incdcpic">incdcpic</string>
+    <string name="title_activity_trircpic">trircpic</string>
 </resources>

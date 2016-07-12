@@ -33,7 +33,7 @@ public class chest1 extends AppCompatActivity {
         actionBar.setTitle("Chest Day");
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.BLACK));
 
-        String[] excercise1 = {"Barbell Bench Press", "Decline Barbell Bench Press", "Incline Barbell Bench Press", "Incline Dumbbell Pull-Over", "Incline Dumbbell Fly", "Incline Dumbbell Press", "Push up"};
+        String[] excercise1 = {"Barbell Bench Press", "Decline Bench Press", "Incline Bench Press", "Dumbbell Pull-Over", "Incline Dumbbell Fly", "Incline Dumbbell Press", "Push up"};
         String[] Detail = {"3 Set of 8-12 rep", "3 set of 8-12 rep", "3 set of 12,10,8 rep", "3 set of 10-12 rep", "4 set of 10-15 rep", "3 set of 10-12 rep", "3 set of failure"};
         ArrayList<User> arraylist = new ArrayList<User>();
         for (int i = 0; i < excercise1.length; i++) {

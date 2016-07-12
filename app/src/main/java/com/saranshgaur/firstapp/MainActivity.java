@@ -85,10 +85,11 @@ public class MainActivity extends AppCompatActivity {
                                 startActivity(i4);
 
                                 break;
-                            default:
-                                String url = "https://www.youtube.com/watch?v=67xffORC8g4";
-                                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                                startActivity(intent);
+                            case 5:
+                                Intent i5 = new Intent(MainActivity.this, arm.class);
+                                startActivity(i5);
+
+                                break;
                         }
                     }
                 }
